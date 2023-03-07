@@ -29,6 +29,7 @@ def RC4 (clave, textoplano):
     cifrado = bytes([p ^ next(flujoclave) for p in textoplano])
     return cifrado.hex().upper()
 
+#Recuperando las entradas en una lista.
 inputs = []
 
 for entrada in fp.input():
@@ -36,8 +37,11 @@ for entrada in fp.input():
 
 print(inputs)
 
+
+
 # Transformamos todos a un flujo de bits hexadecimal. 
 key1 = entrada[0].encode('utf-8')
+print(key1)
 key1 = bytes.fromhex(key1.hex().upper())
 text1 = entrada[1].encode('utf-8')
 text1 = bytes.fromhex(text1.hex().upper())
