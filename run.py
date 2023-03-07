@@ -34,6 +34,8 @@ inputs = []
 for entrada in fp.input():
     inputs.append(entrada)
 
+print(inputs)
+
 # Transformamos todos a un flujo de bits hexadecimal. 
 key1 = entrada[0].encode('utf-8')
 key1 = bytes.fromhex(key1.hex().upper())
