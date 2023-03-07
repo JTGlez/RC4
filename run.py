@@ -35,15 +35,10 @@ inputs = []
 for entrada in fp.input():
     inputs.append(entrada.strip())
 
-print(inputs)
-
-
-
 # Transformamos todos a un flujo de bits hexadecimal. 
 key1 = inputs[0].encode('utf-8')
-print(key1)
 key1 = bytes.fromhex(key1.hex().upper())
-text1 = entrada[1].encode('utf-8')
+text1 = inputs[1].encode('utf-8')
 text1 = bytes.fromhex(text1.hex().upper())
 
 print(RC4(key1, text1))
