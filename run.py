@@ -32,7 +32,7 @@ def RC4 (clave, textoplano):
 inputs = []
 
 for entrada in fp.input():
-    inputs.append(entrada)
+    inputs.append(entrada.strip())
 
 print(inputs)
 
