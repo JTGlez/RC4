@@ -32,7 +32,7 @@ def RC4 (clave, textoplano):
 inputs = []
 
 for entrada in fp.input():
-    entrada.append(inputs)
+    inputs.append(entrada)
 
 # Transformamos todos a un flujo de bits hexadecimal. 
 key1 = entrada[0].encode('utf-8')
