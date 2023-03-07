@@ -40,7 +40,7 @@ print(inputs)
 
 
 # Transformamos todos a un flujo de bits hexadecimal. 
-key1 = entrada[0].encode('utf-8')
+key1 = inputs[0].encode('utf-8')
 print(key1)
 key1 = bytes.fromhex(key1.hex().upper())
 text1 = entrada[1].encode('utf-8')
