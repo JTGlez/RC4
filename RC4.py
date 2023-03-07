@@ -20,7 +20,7 @@ def PRGA(s):
         j = (j + s[i]) % 256
         s[i], s[j] = s[j], s[i] # Intercambia valores entre S[i] y S[j]
         K = s[(s[i] + s[j]) % 256]
-        yield K # Generador a la salida conforme se necesiten bits.
+        yield K # Generador a la salida conforme se necesiten bits para cifrar.
 
 def RC4 (clave, textoplano):
     """Realiza el cifrado con RC4 de un mensaje en claro."""
